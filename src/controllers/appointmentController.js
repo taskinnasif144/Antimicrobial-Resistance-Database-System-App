@@ -54,7 +54,7 @@ export const getAppointments = async (req, res) => {
 
   let queary;
 
-  if (designation === "Patient") {
+  if (designation === "Client") {
     queary = { patientID: id };
   } else {
     queary = { doctorID: id };

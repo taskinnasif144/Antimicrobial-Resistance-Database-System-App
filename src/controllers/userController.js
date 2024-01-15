@@ -79,7 +79,7 @@ export const searchPatient = async (req, res) => {
             { userID: { $regex: query, $options: "i" } },
           ],
         },
-        { designation: "Patient" },
+        { designation: "Client" },
       ],
     });
   } catch (error) {
@@ -127,7 +127,7 @@ export const searchDoctors = async (req, res) => {
             { department: { $regex: query, $options: "i" } },
           ],
         },
-        { designation: "Doctor" },
+        { designation: "Telemedicine Officer" },
       ],
     });
   } catch (error) {
